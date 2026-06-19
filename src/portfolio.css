@@ -17,12 +17,12 @@
 .aurora .a2 { width:560px; height:560px; top:-80px; right:-160px; background:radial-gradient(circle,rgba(139,156,255,.28),transparent 65%); animation:drift2 22s ease-in-out infinite; }
 @keyframes drift1 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(80px,60px);} }
 @keyframes drift2 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-70px,50px);} }
-.wrap { position:relative; z-index:3; max-width:1320px; margin:0 auto; padding:0 26px; }
+.wrap { position:relative; z-index:3; width:100%; margin:0 auto; padding:0 clamp(26px,4vw,80px); }
 .mono { font-family:'IBM Plex Mono',monospace; } .accent { color:var(--accent); }
 
 /* ── Navbar ── */
 .nav { position:sticky; top:0; z-index:40; backdrop-filter:blur(16px); background:rgba(7,8,12,.6); border-bottom:1px solid var(--line); }
-.nav-in { display:flex; align-items:center; justify-content:space-between; height:62px; max-width:1320px; margin:0 auto; padding:0 26px; }
+.nav-in { display:flex; align-items:center; justify-content:space-between; height:62px; width:100%; margin:0 auto; padding:0 clamp(26px,4vw,80px); }
 .logo { font-family:'Sora',sans-serif; font-weight:800; letter-spacing:-.5px; font-size:17px; }
 .logo .accent { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 .nav-r { display:flex; gap:22px; align-items:center; }
