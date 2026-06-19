@@ -14,7 +14,18 @@ async function callClaude(body) {
   return (data.text || "").trim();
 }
 
-export default function ChatBox({ t, messages, setMessages, touring, tour, onStartTour, onStopTour, onNextTour }) {
+const SYSTEM = {
+  fr: (profile) =>
+    "Tu es l'assistant du portfolio d'Ange Stève Hakira BAKO, étudiant-ingénieur en IA. " +
+    "Réponds UNIQUEMENT en français, à partir du dossier ci-dessous. Concis (2 à 5 phrases), précis, honnête (profil junior, n'invente rien). " +
+    "Cite les projets par leur nom. Si l'info manque, dis-le et invite à contacter Ange (hakira.bako@gmail.com). bot_cartographe est un projet d'équipe.\n\n=== DOSSIER ===\n" + profile,
+  en: (profile) =>
+    "You are the portfolio assistant of Ange Stève Hakira BAKO, an AI engineering student. " +
+    "Reply ONLY in English, based solely on the dossier below. Be concise (2 to 5 sentences), accurate, honest (junior profile — never invent anything). " +
+    "Refer to projects by name. If information is missing, say so and invite the user to contact Ange (hakira.bako@gmail.com). bot_cartographe is a team project.\n\n=== DOSSIER ===\n" + profile,
+};
+
+export default function ChatBox({ t, lang, messages, setMessages, touring, tour, onStartTour, onStopTour, onNextTour }) {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef(null);
@@ -34,10 +45,7 @@ export default function ChatBox({ t, messages, setMessages, touring, tour, onSta
     try {
       const text = await callClaude({
         model: "claude-sonnet-4-20250514", max_tokens: 1000,
-        system:
-          "Tu es l'assistant du portfolio d'Ange Stève Hakira BAKO, étudiant-ingénieur en IA. Ce portfolio est son carnet de bord. " +
-          "Réponds UNIQUEMENT à partir du dossier ci-dessous, dans la langue de la question. Concis (2 à 5 phrases), précis, honnête (profil junior, n'invente rien). " +
-          "Cite les projets par leur nom. Si l'info manque, dis-le et invite à contacter Ange (hakira.bako@gmail.com). bot_cartographe est un projet d'équipe.\n\n=== DOSSIER ===\n" + PROFILE,
+        system: SYSTEM[lang] ? SYSTEM[lang](PROFILE) : SYSTEM.fr(PROFILE),
         messages: next.map((m) => ({ role: m.role, content: m.content })),
       });
       setMessages((m) => [...m, { role: "assistant", content: text || t.errorMsg }]);

@@ -43,6 +43,7 @@ export default function HeroSection({ t, lang }) {
       </div>
       <ChatBox
         t={t}
+        lang={lang}
         messages={messages}
         setMessages={setMessages}
         touring={touring}
