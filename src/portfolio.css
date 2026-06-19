@@ -19,6 +19,7 @@
 @keyframes drift2 { 0%,100%{transform:translate(0,0);} 50%{transform:translate(-70px,50px);} }
 .wrap { position:relative; z-index:3; width:100%; margin:0 auto; padding:0 clamp(26px,4vw,80px); }
 .mono { font-family:'IBM Plex Mono',monospace; } .accent { color:var(--accent); }
+.pf h1, .pf h2 { color:var(--text); }
 
 /* ── Navbar ── */
 .nav { position:sticky; top:0; z-index:40; backdrop-filter:blur(16px); background:rgba(7,8,12,.6); border-bottom:1px solid var(--line); }
