@@ -49,7 +49,7 @@ export const PROJECTS = [
     id: "blog", year: "1", domain: "eng", name: "Interface moderne de blog",
     image: "",
     stack: ["Next.js", "React", "Express", "MySQL", "DaisyUI"], badges: [],
-    links: [{ label: "GitHub", url: "https://github.com/hakirabako" }],
+    links: [{ label: "GitHub", url: "https://github.com/hakirabako-ops" }],
     fr: { tag: "Full-stack web", metric: "Du rendu client à la base de données", case: [
       "Concevoir une plateforme de blog moderne, réactive et maintenable.",
       "Frontend React/Next.js avec composants réutilisables et formulaires contrôlés ; API Express ; persistance MySQL.",
@@ -63,7 +63,7 @@ export const PROJECTS = [
     id: "erp", year: "prepa", domain: "eng", name: "Mini-ERP de gestion commerciale",
     image: "",
     stack: ["Java 17", "MVC", "JavaFX", "FXML"], badges: [],
-    links: [{ label: "GitHub", url: "https://github.com/hakirabako" }],
+    links: [{ label: "GitHub", url: "https://github.com/hakirabako-ops" }],
     fr: { tag: "Java · POO · MVC", metric: "Architecture MVC propre", case: [
       "Outiller la gestion commerciale d'une PME : clients, produits, facturation.",
       "Application Java 17 en architecture MVC stricte, interface JavaFX + FXML, modélisation orientée objet du domaine.",
@@ -77,7 +77,7 @@ export const PROJECTS = [
     id: "graph", year: "prepa", domain: "other", name: "Théorie des graphes — réseau",
     image: "",
     stack: ["Python", "Tarjan", "Dijkstra", "Graphes"], badges: [],
-    links: [{ label: "GitHub", url: "https://github.com/hakirabako" }],
+    links: [{ label: "GitHub", url: "https://github.com/hakirabako-ops" }],
     fr: { tag: "Algorithmique", metric: "Tarjan + Dijkstra", case: [
       "Diagnostiquer et maintenir un réseau informatique modélisé comme un graphe.",
       "Implémentation en Python des algorithmes de Tarjan (composantes critiques) et de Dijkstra (plus courts chemins).",

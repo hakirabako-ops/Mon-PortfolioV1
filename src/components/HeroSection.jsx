@@ -36,7 +36,7 @@ export default function HeroSection({ t, lang }) {
         <span className="status reveal"><span className="dot" />{t.statusLabel}</span>
         <div className="role reveal mono" style={{ animationDelay: ".05s" }}>{t.role}</div>
         <h1 className="reveal" style={{ animationDelay: ".1s" }}>
-          {t.name1}<br /><span className="grad">{t.name2}.</span>
+          <span className="grad">{t.name1}</span><br /><span className="grad">{t.name2}.</span>
         </h1>
         <p className="tag reveal" style={{ animationDelay: ".15s" }}>{t.tagline}</p>
         <div className="neural-hint reveal mono" style={{ animationDelay: ".18s" }}>✦ {t.neuralHint}</div>

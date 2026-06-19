@@ -12,7 +12,7 @@ export default function ContactSection({ t }) {
       <div className="meta">
         <a href="mailto:hakira.bako@gmail.com">hakira.bako@gmail.com</a>
         {" · "}+226 55762498{" · "}
-        <a href="https://github.com/hakirabako" target="_blank" rel="noreferrer">github.com/hakirabako</a>
+        <a href="https://github.com/hakirabako-ops" target="_blank" rel="noreferrer">github.com/hakirabako-ops</a>
       </div>
     </section>
   );
