@@ -1,7 +1,7 @@
 export const TXT = {
   fr: {
     nav: ["Projets", "Compétences", "Certifications", "Parcours"], langBtn: "EN",
-    role: "Élèves-INGÉNIEUR · INTELLIGENCE ARTIFICIELLE", name1: "Ange Stève Hakira", name2: "BAKO",
+    role: "Élève-INGÉNIEUR · INTELLIGENCE ARTIFICIELLE", name1: "Ange Stève Hakira", name2: "BAKO",
     tagline: "Le carnet de bord de mon cycle ingénieur en IA — projets, compétences et certifications, enrichi au fil de ma progression.",
     statusLabel: "PORTFOLIO VIVANT ",
     metricLabels: ["projets", "certifications", "année en cours", "spécialité"], curYear: "1A", spec: "IA / ML",
