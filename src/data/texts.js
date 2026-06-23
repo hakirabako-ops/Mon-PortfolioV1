@@ -1,9 +1,9 @@
 export const TXT = {
   fr: {
     nav: ["Projets", "Compétences", "Certifications", "Parcours"], langBtn: "EN",
-    role: "ÉTUDIANT-INGÉNIEUR · INTELLIGENCE ARTIFICIELLE", name1: "Ange Stève Hakira", name2: "BAKO",
+    role: "Élèves-INGÉNIEUR · INTELLIGENCE ARTIFICIELLE", name1: "Ange Stève Hakira", name2: "BAKO",
     tagline: "Le carnet de bord de mon cycle ingénieur en IA — projets, compétences et certifications, enrichi au fil de ma progression.",
-    statusLabel: "PORTFOLIO VIVANT · MIS À JOUR EN CONTINU",
+    statusLabel: "PORTFOLIO VIVANT ",
     metricLabels: ["projets", "certifications", "année en cours", "spécialité"], curYear: "1A", spec: "IA / ML",
     chatTitle: "interroge_le_portfolio", chatSub: "assistant IA · live", chatPlaceholder: "Parle-moi de ses projets IA…",
     chatIntro: "Bonjour 👋 Je suis l'assistant de ce portfolio, propulsé par un LLM en direct. Posez-moi une question sur le parcours, les projets ou les compétences d'Ange — je réponds à partir de son dossier réel.",
@@ -39,7 +39,7 @@ export const TXT = {
     nav: ["Projects", "Skills", "Certifications", "Background"], langBtn: "FR",
     role: "AI ENGINEERING STUDENT", name1: "Ange Stève Hakira", name2: "BAKO",
     tagline: "The logbook of my AI engineering degree — projects, skills and certifications, growing as I progress.",
-    statusLabel: "LIVING PORTFOLIO · CONTINUOUSLY UPDATED",
+    statusLabel: "LIVING PORTFOLIO",
     metricLabels: ["projects", "certifications", "current year", "focus"], curYear: "Y1", spec: "AI / ML",
     chatTitle: "ask_the_portfolio", chatSub: "AI assistant · live", chatPlaceholder: "Tell me about his AI projects…",
     chatIntro: "Hi 👋 I'm this portfolio's assistant, powered by a live LLM. Ask me anything about Ange's background, projects or skills — I answer from his real dossier.",
